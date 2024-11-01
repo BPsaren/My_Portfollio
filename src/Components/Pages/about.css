@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Odibee+Sans&display=swap');
+.grid figure img{
+    width:250px ;
+    margin-left: -800px;
+    display: 100vh;
+}
+
+
+
+
+
+
+.grid h2{
+font-size: 200px;
+/* font-family: "Libre Baskerville", sans-serif; */
+font-family: Font;
+margin-top: -200px;
+text-shadow: 0px 2px 2px rgba(147, 139, 139, 0.4); 
+}
+
+
+
+.grid p{
+   margin-top: 10px;
+    /* font-family: "Libre Baskerville", sans-serif; */
+  /*   font-family: "Odibee Sans", sans-serif; */
+   text-align:justify;
+   font-family: "monospace";
+   font-size: 20px;
+    }
+
+
+.grid span{
+    font-family: "monospace";
+    font-size: 30px;
+}
+
+@font-face {
+    font-family: Font;
+    src: url(font/CRACKWALL-Regular.ttf);
+  }
+
+
+
+
+
+
+
+@media screen and (max-width: 1023px){
+  
+   
+    .grid-1 h2:nth-child(3){
+        font-size: 3em;
+    }
+    .grid{
+        display: block;
+    }
+    
+}
+
+
+.autoShow ,p{
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
+
+}
+@keyframes autoShowAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.autoRotate{
+    animation: autoRotateAnimation;
+    animation-timeline: view();
+}
+@keyframes autoRotateAnimation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

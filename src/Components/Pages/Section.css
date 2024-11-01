@@ -1,0 +1,164 @@
+/* General styles for all sections */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Odibee+Sans&display=swap');
+.section {
+  padding: 100px 20px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.home {
+  background-color: #CBCBCB;
+ 
+}
+.home-cover-image{
+  width: 900px;
+  height: 700px;
+
+  margin-left: 650px;
+  margin-top:-323px;
+
+}
+.imageBottom{
+  height: 150px;
+  width: 1700px;
+  border: 1px solid #7c7373;
+  margin-top:187px ;
+  margin-left: 90px;
+  border-radius: 30px;
+ 
+}
+.imageBottom-Contain {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  padding-top: 20px;
+  font-size:30px;
+  font-family:Fon ;
+  text-align: justify;
+
+  
+}
+
+.paragraph-align{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: monospace;
+
+  font-size: 20px;
+  text-align: justify;
+  
+}
+.Welcome-Font {
+  margin-left: 200px;
+  margin-top: -700px;
+  height: 200px;
+  width: 500px;
+ 
+
+}
+
+
+.Hire-Me {
+  padding-top: 7px;
+  text-align: center;
+  justify-content: center;
+  width: 100px;
+  height: 40px;
+  border: 1px solid #7c7373;
+  border-radius: 5px;
+  margin-left: 200px;
+  font-family: "monospace";
+  cursor: pointer;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.Hire::before{
+content:"";
+position:absolute;
+left:0;
+width:100%;
+height: 0%;
+background: #3498db;
+z-index:-1;
+transition: 0.8s;
+
+}
+.Resume::before{
+ content:"";
+position:absolute;
+left:0;
+width:100%;
+height: 0%;
+background: #3498db;
+z-index:-1;
+transition: 0.8s;
+}
+
+
+.Hire::before{
+ top:0;
+ border-radius: 0 0 50% 50%;
+  }
+
+
+.Resume::before{
+  bottom:0;
+  border-radius:50% 50%  0 0 ;
+ }
+ 
+  .Hire:hover::before,.Resume:hover::before{
+  height: 180%;
+  }
+.Resume{
+  padding-top: 7px;
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  border: 1px solid #7c7373;
+  border-radius: 5px;
+  margin-left: 320px;
+  margin-top:-40px;
+  font-family: "monospace";
+  cursor: pointer;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.Hire-Me,.Resume {
+  color: black;
+}
+
+.Hire-Me:hover,.Resume:hover {
+  color: #fff;
+  background-color: gray;
+  transition: 0.8s;
+}
+
+
+@font-face {
+  font-family: Font;
+  src: url(font/CRACKWALL-Regular.ttf);
+}
+
+.Welcome-Font h1 {
+  margin-bottom: 20px;
+  color: #333;
+  font-family: Font;
+  /* font-family: "Libre Baskerville", sans-serif; */
+  font-size:60px;
+}
+
+/* Other section styles */
+.about, .projects, .contact {
+  background-color: #CBCBCB;
+  text-align: center;
+}
